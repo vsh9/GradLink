@@ -13,7 +13,7 @@ replycli = Client(settings.TWILIO_ACCOUNT_SID, settings.TWILIO_AUTH_TOKEN)
 
 cli = TwilioClient()
 def test_fnc(request):
-    cli.send_rsvp_confirmation(to=918792463479)
+    cli.send_rsvp_confirmation(to='')
     return HttpResponse("Done")
 
 def send_message_view(data: Notification):
